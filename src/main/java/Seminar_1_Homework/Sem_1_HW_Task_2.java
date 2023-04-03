@@ -18,11 +18,12 @@ public class Sem_1_HW_Task_2 {
 
     // Метод создания массива с тройками в конце массива
     private static int[] ThreeEndedArray(int array[]) {
+        int val = 3;
         int indexEnd = array.length - 1;
         int indexStart = 0;
         int[] remasteredArray = new int[array.length];
         for (int el : array) {
-            if (el == 3) {
+            if (el == val) {
                 remasteredArray[indexEnd] = el;
                 indexEnd--;
             } else {
