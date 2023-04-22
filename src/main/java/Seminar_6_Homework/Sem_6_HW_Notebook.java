@@ -10,7 +10,7 @@ public class Sem_6_HW_Notebook {
     private final int rom;
     private final String typeDisk;
 
-    public S6_HW_Notebook(String brand, String model, String color, double screenSize, String screenTechnology,
+    public Sem_6_HW_Notebook(String brand, String model, String color, double screenSize, String screenTechnology,
                           int ram, int rom, String typeDisk) {
         this.brand = brand;
         this.model = model;
@@ -22,8 +22,8 @@ public class Sem_6_HW_Notebook {
         this.typeDisk = typeDisk;
     }
     public String printInfo(){
-        System.out.printf("Brand: %s, Model: %s, Color: %s, ScreenSize: %s, ScreenTechnology: %s, RAM: %s, ROM: %s," +
-                        " TypeDisk: %s",
+        System.out.printf("Brand: %s, Model: %s, Color: %s, ScreenSize: %s, ScreenTechnology: %s, RAM: %s, " +
+                        "ROM: %s, TypeDisk: %s",
                 brand, model, color, screenSize, screenTechnology, ram, rom, typeDisk);
         return "";
     }
@@ -54,5 +54,4 @@ public class Sem_6_HW_Notebook {
     public String getTypeDisk() {
         return typeDisk;
     }
-
 }
