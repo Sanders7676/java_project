@@ -49,7 +49,7 @@ public class Sem_5_HW_Task_2 {
             for (int j = i + 1; j < name.size(); j++) {
                 if (name.get(i).equals(name.get(j))) count += 1;
             }
-            if (mapRepeatsOfNames.containsKey(name.get(i)) == false) mapRepeatsOfNames.put(name.get(i), count);
+            if (!mapRepeatsOfNames.containsKey(name.get(i))) mapRepeatsOfNames.put(name.get(i), count);
         }
         // System.out.println(mapRepeatsOfNames);     // Проверка формирования Map<String, Integer> mapRepeatsOfNames
         return mapRepeatsOfNames;
@@ -69,7 +69,7 @@ public class Sem_5_HW_Task_2 {
         System.out.println("\nИмена, отсортированные по убыванию популярности: \n");
         ArrayList<Integer> countList = new ArrayList<>();
         for (var item : map.entrySet()) {
-            if (countList.contains(item.getValue()) == false) countList.add(item.getValue());
+            if (!countList.contains(item.getValue())) countList.add(item.getValue());
         }
         countList.sort(null);
         for (int i = countList.size() - 1; i > -1; i--) {
